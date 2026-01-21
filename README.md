@@ -20,16 +20,16 @@ AI Model: MediaPipe (Pose Estimation)
 Math: NumPy (Angle Calculation)
 
 ⚙️ Installation:
-  Clone the repository:
-    git clone https://github.com/your-username/posture-pro-cv.git
-    cd posture-pro-cv
+Clone the repository:
+git clone https://github.com/your-username/posture-pro-cv.git
+cd posture-pro-cv
 
-  Create a virtual environment:
-    python -m venv venv
-    source venv/bin/activate  # On Windows use: venv\Scripts\activate
+Create a virtual environment:
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
-  Install dependencies:
-    pip install opencv-contrib-python mediapipe numpy
+Install dependencies:
+pip install opencv-contrib-python mediapipe numpy
 
 📈 How it Works
 The system calculates the angle between the Ear, Shoulder, and Hip landmarks provided by MediaPipe. If the angle falls below a certain threshold (e.g., 165°), the system flags it as "Bad Posture."
