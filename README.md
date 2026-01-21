@@ -29,7 +29,7 @@ python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
 Install dependencies:
-pip install opencv-contrib-python mediapipe numpy
+pip install -r requirements.txt
 
 📈 How it Works
 The system calculates the angle between the Ear, Shoulder, and Hip landmarks provided by MediaPipe. If the angle falls below a certain threshold (e.g., 165°), the system flags it as "Bad Posture."
